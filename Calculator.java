@@ -42,5 +42,6 @@ public class Calculator {
                 break;
         }
         System.out.println("Bye Bye !!!");
+        sc.close();
     }
 }

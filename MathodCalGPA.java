@@ -50,5 +50,6 @@ public class MathodCalGPA {
         }
         gpa = gpa/(loop-1);
         System.out.printf("GPA = %.2f", gpa);
+        sc.close();
     }
 }

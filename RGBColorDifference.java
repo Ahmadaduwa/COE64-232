@@ -16,5 +16,6 @@ public class RGBColorDifference {
         double d = Math.sqrt(Math.pow(r2-r1,2)+Math.pow(g2-g1,2)+Math.pow(b2-b1,2));
 
         System.out.println("Color Difference = "+d);
+        sc.close();
     }
 }

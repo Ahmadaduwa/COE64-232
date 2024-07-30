@@ -22,5 +22,6 @@ public class SumElementMatric {
             }
         }
         System.out.println("Summary: "+sum);
+        sc.close();
     }
 }

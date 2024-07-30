@@ -51,5 +51,6 @@ public class MethodReadSMSNumber {
             System.out.println("Do you want to continue [y/n]: ");
             a = sc.next().charAt(0);
         }
+        sc.close();
     }  
 }

@@ -22,5 +22,6 @@ public class CalTrippleX {
                 System.out.println("Invalid");
             }
         }
+        sc.close();
     }
 }

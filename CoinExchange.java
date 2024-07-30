@@ -1,5 +1,4 @@
 import java.util.Scanner; 
-import java.lang.Math;
 public class CoinExchange { 
     public static void main(String[] args){ 
         Scanner sc = new Scanner(System.in);
@@ -38,5 +37,6 @@ public class CoinExchange {
         System.out.println("Bank 100 Baht : "+b100);
         System.out.println("Bank 50 Baht : "+b50);
         System.out.println("Bank 20 Baht : "+b20);
+        sc.close();
     }
 }

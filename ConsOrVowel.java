@@ -16,5 +16,6 @@ public class ConsOrVowel {
                 System.out.println("Consonant");
                 break;
         }
+        sc.close();
     }
 }

@@ -27,5 +27,6 @@ public class TestCharLoop {
             
         }
         System.out.println("Bye Bye!!");
+        sc.close();
     }
 }

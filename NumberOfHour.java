@@ -1,5 +1,4 @@
 import java.util.Scanner; 
-import java.lang.Math;
 public class NumberOfHour { 
     public static void main(String[] args){ 
         Scanner sc = new Scanner(System.in);
@@ -13,5 +12,6 @@ public class NumberOfHour {
         int hour = temp / 60;
 
         System.out.println(num +" seconds is approximately "+ hour +" hours, "+ minute +" minute and "+ seconds +" seconds");
+        sc.close();
     }
 }

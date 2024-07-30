@@ -35,6 +35,7 @@ public class PassOrFailMethod {
                 System.out.println("Fail");
             }
         }
+        sc.close();
         
     }
 }

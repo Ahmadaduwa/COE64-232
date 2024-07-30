@@ -9,6 +9,7 @@ public class PrintCubic {
         for (int i = num; i<num+11; i++) {
             System.err.print(i+" "+(int)Math.pow(i, 3)+"\n");
         }
+        sc.close();
     }
 
 }

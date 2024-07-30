@@ -20,5 +20,6 @@ public class Multiplication {
                 System.out.println("Invalid data, please try again.");
             }
         }
+        sc.close();
     }
 }

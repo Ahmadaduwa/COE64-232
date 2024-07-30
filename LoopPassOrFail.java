@@ -28,5 +28,6 @@ public class LoopPassOrFail {
             ans = sc.next().charAt(0);
         }
         System.out.println("Bye Bye !!!");
+        sc.close();
     }
 }

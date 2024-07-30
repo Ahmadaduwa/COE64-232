@@ -13,5 +13,6 @@ public class ManhattanDistance {
 
         double d = Math.abs(x1-x2)+Math.abs(y1-y2);
         System.out.println("Manhattan Distance = "+(int)d);
+        sc.close();
     }
 }

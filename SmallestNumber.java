@@ -19,5 +19,6 @@ public class SmallestNumber {
         } else if (n3 < n2 && n3 < n1) {
             System.err.println(n3+" is the smallest");
         }
+        sc.close();
     }
 }

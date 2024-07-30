@@ -19,5 +19,6 @@ public class EuclideanDistance {
         double d = Math.sqrt(x+y);
 
         System.out.println(d);
+        sc.close();
     }
 }

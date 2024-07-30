@@ -29,5 +29,6 @@ public class ProcessInteger {
         System.out.println("Summary of even number: " + sumeven);
         System.out.println("Maximun number :" + max);
         System.out.println("Minimun number :" + min);
+        sc.close();
     }
 }
