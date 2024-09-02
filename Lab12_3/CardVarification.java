@@ -6,41 +6,46 @@ public class CardVarification {
     static void display(Shop m) {
         System.out.println(m.toString());
         for (int i = 0; i < m.getMember().size(); i++) {
-            System.out.println((i + 1) + " " + m.toString());
+            System.out.println((i + 1) + " " + m.getMember().get(i).toString());
             System.out.println(" "+m.getMember().get(i).getCard().toString());
         }
         System.out.println();
     }
 
-    static void checkID(String id, ArrayList<Shop> m){
+    static void checkID(String id, ArrayList<Shop> m, Scanner sc){
         boolean checkFound = false;
+        boolean checkCard = false;
+        int[] locate = new int[2];
         for (int i = 0; i < m.size(); i++) {
             for (int j = 0; j < m.get(i).getMember().size(); j++) {
                 if(m.get(i).getMember().get(j).getID().equals(id)){
                     System.out.println("Valid member id");
                     checkFound = true;
-                    checkCard(m.get(i).getMember().get(j).getCard(), m.get(i).getName(), m.get(i).getMember().get(j)); //(card, shopName, member)
+                    checkCard = checkCard(m.get(i).getMember().get(j).getCard(), sc); //(card, shopName, member)
+                    locate[0] = i;
+                    locate[1] = j;
                 }
             }
         }
         if (!checkFound) {
             System.out.println("Invalid member id");
+        } else {
+            if (checkCard){
+                System.out.println("This card belongs to Shop: "+m.get(locate[0]).getName());
+                System.out.println(m.get(locate[0]).getMember().get(locate[1]).toString());
+            } else {
+                System.out.println("Invalid Card");
+            }
         }
     }
 
-    static void checkCard(Card card, String shopName, Member member){
-        Scanner sc = new Scanner(System.in);
+    static boolean checkCard(Card card, Scanner sc){
         System.out.print("Please enter card no: ");
         String no = sc.next();
         System.out.print("Please enter pin no: ");
         String pin = sc.next();
         boolean valid = card.isValid(no, pin);
-        if (valid){
-            System.out.println("This card belongs to Shop: "+shopName);
-            System.out.println(member.getCard().toString());
-        } else {
-            System.out.println("Invalid Card");
-        }
+        return valid;
     }
 
     public static void main(String[] args) {
@@ -69,7 +74,7 @@ public class CardVarification {
         while (ans == 'y') {
             System.out.print("Enter membet id: ");
             String id = sc.next();
-            checkID(id, shops);
+            checkID(id, shops, sc);
 
             System.out.println();
             System.out.print("continue [y/n]: ");
