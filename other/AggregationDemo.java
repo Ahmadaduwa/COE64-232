@@ -9,11 +9,11 @@ public class AggregationDemo {
         person.setName("Paul"); // Blank 10 Question 2    
 
         // create Mobile object  
-        Mobile number1 = new Mobile(); // Blank 11 Question 2
+        Mobile number1 = new Mobile(null, null, null); // Blank 11 Question 2
 
         number1.setMobileNo("8868923136"); // Blank 12 Question 2
 
-        Mobile number2 = new Mobile();  // Blank 13 Question 2
+        Mobile number2 = new Mobile(null, null, null);  // Blank 13 Question 2
 
         number2.setMobileNo("8630023310");  
 

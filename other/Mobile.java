@@ -20,5 +20,15 @@ public class Mobile {
     public String getRom() {
        return this.rom;
     }
+
+    public void setMobileNo(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setMobileNo'");
+    }
+
+    public String getMobileNo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getMobileNo'");
+    }
  }
  
